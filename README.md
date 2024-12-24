@@ -1,0 +1,3 @@
+This repository demonstrates a common issue encountered when using nested routes and wildcard routes in React Router v6.  The problem arises when a wildcard route ('/users/*' in this case) is placed after more specific routes. The wildcard route unintentionally captures all paths, preventing other routes from working correctly.
+
+The `bug.js` file shows the problematic code. The `bugSolution.js` file demonstrates a solution by reordering the routes to ensure that more specific routes are checked before the wildcard route.
